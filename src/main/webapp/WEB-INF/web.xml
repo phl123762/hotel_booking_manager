@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                            http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        id="WebApp_ID"
+        version="3.0">
+
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>controller.servlet.AddBookingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>findBooking</servlet-name>
+    <servlet-class>controller.servlet.FindBookingByGuestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findBooking</servlet-name>
+    <url-pattern>/findBooking</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>findRoom</servlet-name>
+    <servlet-class>controller.servlet.FindRoomByDateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findRoom</servlet-name>
+    <url-pattern>/findRoom</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>initiateRoom</servlet-name>
+    <servlet-class>controller.servlet.InitiateRoom</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>initiateRoom</servlet-name>
+    <url-pattern>/initiateRoom</url-pattern>
+  </servlet-mapping>
+
+
+
+</web-app>
