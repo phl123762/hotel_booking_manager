@@ -125,7 +125,7 @@ public class RedisHelper {
         return jedis.watch(key);
     }
 
-
+    public static String flush(){return jedis.flushDB();}
 
 
 }
