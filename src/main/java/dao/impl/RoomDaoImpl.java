@@ -59,6 +59,7 @@ public class RoomDaoImpl implements RoomDao {
 
     @Override
     public boolean InitRoom(int number) {
+        RedisHelper.flush();
         this.number=number;
         try{
             for(int i=0;i<number;i++){
